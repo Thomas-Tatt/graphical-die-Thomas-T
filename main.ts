@@ -1,0 +1,55 @@
+input.onGesture(Gesture.Shake, function () {
+    let number = 0
+    if (number == 1) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+    } else if (number == 2) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . . . #
+            . . . . .
+            . . . . .
+            `)
+    } else if (number == 3) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . # . #
+            . . . . .
+            . . . . .
+            `)
+    } else if (number == 4) {
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . . . .
+            . . . . .
+            # . . . #
+            `)
+    } else if (number == 5) {
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . # . .
+            . . . . .
+            # . . . #
+            `)
+    } else if (number == 6) {
+        basic.showLeds(`
+            . . . . .
+            # . . . #
+            # . . . #
+            # . . . #
+            . . . . .
+            `)
+    }
+})
+basic.forever(function () {
+	
+})
