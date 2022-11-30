@@ -1,5 +1,7 @@
+let number = 0
 input.onGesture(Gesture.Shake, function () {
-    let number = 0
+    basic.clearScreen()
+    number = randint(1, 6)
     if (number == 1) {
         basic.showLeds(`
             . . . . .
